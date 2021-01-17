@@ -1,0 +1,72 @@
+/* general info */
+.general-info {
+	background-color: rgba(187, 187, 187, 0.274);
+	padding: 32px;
+}
+.main-heading {
+	font-weight: bold;
+}
+.sub-heading {
+	color: rgb(27, 121, 228);
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.sub-heading span {
+	color: black;
+}
+
+/* Skills section */
+
+.skills-section {
+	background-color: rgba(27, 121, 228, 0.39);
+	padding: 32px;
+	height: 100vh;
+}
+.skills-list {
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	padding-left: 0;
+}
+.skill-cell {
+	background-color: rgb(27, 121, 228);
+	padding: 5px 10px;
+	margin: 5px 10px;
+	margin-left: 0;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+}
+.profile-img-container {
+	text-align: center;
+}
+.profile-img {
+	display: block;
+	margin-bottom: 15px;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+/* Info section */
+.section-info {
+	padding: 0 32px;
+}
+.section-info .main-heading {
+	margin-bottom: 15px;
+	border-bottom: 3px solid rgba(27, 121, 228, 0.39);
+}
+.info-card .main-heading {
+	margin-bottom: 5px !important;
+}
+.secondary-heading {
+	margin-bottom: 0;
+}
+.date {
+	margin-bottom: 0;
+	color: rgba(27, 121, 228, 0.842);
+}
+.info-card {
+	margin-bottom: 15px;
+}

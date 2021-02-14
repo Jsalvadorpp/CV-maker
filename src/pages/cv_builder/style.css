@@ -5,14 +5,19 @@
 }
 .main-heading {
 	font-weight: bold;
+	display: flex;
+	align-items: center;
 }
 .sub-heading {
 	color: rgb(27, 121, 228);
 	font-weight: bold;
 	margin-bottom: 0;
+	display: flex;
+	align-items: center;
 }
 .sub-heading span {
 	color: black;
+	margin-right: 5px;
 }
 
 /* Skills section */
@@ -69,4 +74,22 @@
 }
 .info-card {
 	margin-bottom: 15px;
+}
+
+/* Edit btn */
+.edit-btn:hover {
+	cursor: pointer;
+}
+.edit-btn {
+	background-color: rgb(27, 121, 228);
+	color: white !important;
+	font-size: 12px;
+	padding: 2px 6px;
+	margin-left: 5px;
+}
+
+.form-control {
+	display: inline-block;
+	width: auto;
+	padding: 2px 8px;
 }

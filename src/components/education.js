@@ -10,7 +10,7 @@ export default class education extends Component {
 					<h3 className="secondary-heading">Electronic engineer</h3>
 					<h5 className="sub-heading">UNEXPO</h5>
 					<p className="date">
-						<i class="far fa-calendar-alt pr-2" /> 11/2020 - 03/2021
+						<i className="far fa-calendar-alt pr-2" /> 11/2020 - 03/2021
 					</p>
 				</div>
 			</div>

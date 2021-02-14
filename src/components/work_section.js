@@ -10,7 +10,7 @@ export default class work_section extends Component {
 					<h3 className="secondary-heading">Web developer</h3>
 					<h5 className="sub-heading">Ticktaps</h5>
 					<p className="date">
-						<i class="far fa-calendar-alt pr-2" /> 11/2020 - 03/2026
+						<i className="far fa-calendar-alt pr-2" /> 11/2020 - 03/2026
 					</p>
 					<p className="description">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus, turpis sit amet dapibus

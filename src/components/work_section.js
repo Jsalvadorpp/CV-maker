@@ -1,27 +1,38 @@
 import React, { Component } from 'react';
+import Job_infoCard from './job_infoCard';
 
 export default class work_section extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			jobs: []
+		};
+	}
+
+	add_job = () => {
+		let newData = this.state;
+		newData.jobs.push('');
+		this.setState(newData);
+	};
+	remove_job = () => {
+		let newData = this.state;
+		newData.jobs.pop();
+		this.setState(newData);
+	};
+
 	render() {
+		const { jobs } = this.state;
 		return (
 			<div className="section-info mt-2">
-				<h2 className="main-heading">Work Experiencie</h2>
-
-				<div className="info-card">
-					<h3 className="secondary-heading">Web developer</h3>
-					<h5 className="sub-heading">Ticktaps</h5>
-					<p className="date">
-						<i className="far fa-calendar-alt pr-2" /> 11/2020 - 03/2026
-					</p>
-					<p className="description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus, turpis sit amet dapibus
-						vehicula, ante enim luctus enim, sed vehicula massa quam ut leo. Nunc dignissim erat non
-						pellentesque tempor. Etiam id diam tempus, finibus dui interdum, semper sapien. Fusce mollis
-						tempus orci posuere viverra. Pellentesque malesuada magna quis neque efficitur aliquam. Nullam
-						imperdiet nisi orci. Proin nisl sapien, iaculis eget pharetra at, interdum sed lectus. Duis
-						mattis felis sit amet turpis condimentum imperdiet. Phasellus sed quam efficitur, facilisis
-						lacus at, scelerisque est. Nunc quis consequat velit.
-					</p>
+				<div className="d-flex align-items-center">
+					<h2 className="main-heading mb-0">Work Experiencie</h2>
+					<button className="btn btn-primary ms-2" onClick={this.add_job}>
+						+
+					</button>
 				</div>
+
+				{jobs.map((job) => <Job_infoCard onDelete={this.remove_job} />)}
 			</div>
 		);
 	}
